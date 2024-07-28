@@ -1,0 +1,11 @@
+Cypress.Commands.add('newItem', (first_name, last_name, email, age, salary, department) => { 
+    cy.get('#addNewRecordButton').focus().click()
+    cy.get('#registration-form-modal').should('be.visible').contains('Registration Form')
+    cy.get('#firstName').type(`${first_name}`)
+    cy.get('#lastName').type(`${last_name}`)
+    cy.get('#userEmail').type(`${email}`)
+    cy.get('#age').type(`${age}`)
+    cy.get('#salary').type(`${salary}`)
+    cy.get('#department').type(`${department}`)
+    cy.get('#submit').click()
+})
