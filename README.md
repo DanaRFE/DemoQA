@@ -10,6 +10,7 @@ Open terminal in VS Code and write npm init
 Install Cypress npm install cypress --save-dev
 Install Chai npm install --save-dev chai
 Install Mocha npm install --save-dev mocha
+
 How to run the test :
 
 npx cypress open (you can find in package.json that I added a command to run in chrome if you use npx cypress run --browser chrome")
